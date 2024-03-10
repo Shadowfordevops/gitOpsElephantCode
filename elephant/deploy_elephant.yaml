@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: elephantcode-deployment
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: elephantcode
+  template:
+    metadata:
+      labels:
+        app: elephantcode
+    spec:
+      containers:
+      - name: elephantcode
+        image: shadow228755/elephantcode:0.0.0
+        ports:
+        - containerPort: 7000
+
