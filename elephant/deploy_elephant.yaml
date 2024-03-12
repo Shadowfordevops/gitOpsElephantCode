@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: elephantcode
-        image: shadow228755/elephantcode:0.0.3
+        image: shadow228755/elephantcode:0.0.4
         ports:
         - containerPort: 7000
 
